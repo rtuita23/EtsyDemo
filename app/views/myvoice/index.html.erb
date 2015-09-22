@@ -1,0 +1,41 @@
+<h1>This is My Voice!</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>% Complete</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @region_uri.each do |item| %>
+    <% a = item.values %>
+      <tr>
+        <td><%= a[0] %></td>
+        <td><%= a[1] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>% Complete</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <% @country_uri.each do |item| %>
+    <% a = item.values %>
+      <tr>
+        <td><%= a[0] %></td>
+        <td><%= a[1] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  
+</table>
+
